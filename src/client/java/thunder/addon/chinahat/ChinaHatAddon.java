@@ -4,9 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import thunder.addon.chinahat.modules.ChinaHat;
 import thunder.hack.api.IAddon;
-import thunder.hack.cmd.Command;
-import thunder.hack.gui.hud.HudElement;
-import thunder.hack.modules.Module;
+import thunder.hack.features.cmd.Command;
+import thunder.hack.features.hud.HudElement;
+import thunder.hack.features.modules.Module;
 
 import java.util.Arrays;
 import java.util.List;
@@ -52,5 +52,10 @@ public class ChinaHatAddon implements IAddon {
     @Override
     public String getRepo() {
         return "https://github.com/Pan4ur/ChinaHat-Addon";
+    }
+
+    @Override
+    public String getVersion() {
+        return "1.1.0";
     }
 }
